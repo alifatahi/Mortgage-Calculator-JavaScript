@@ -3,18 +3,37 @@
   <head>
     <meta charset="utf-8">
     <title>Mortgage Calculator</title>
+      <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   </head>
   <body>
-    <h1>Mortgage Calculator</h1>
-    <p><b>Cost of House</b>: <input type="text" id="inCost"></p>
-    <p><b>Down Payment</b>: <input type="text" id="inDown"></p>
-    <!--Anual Persenance race-->
-    <p><b>APR (Interest)</b>: <input type="text" id="inAPR"></p>
-    <p><b>Period (How Long)</b>: <input type="text" id="inPeriod"></p>
-    <p><button id="btnCalculate">Clculate</button></p>
-    <hr>
 
-    <p><b>Total Montly Payment: <span id="outMontly"></span></b></p>
-    <script type="text/javascript" src="mortgage-calc.js"></script>
+  <div class="col-sm-12 text-center">
+      <div class="main">
+      <h1 class="heading">Mortgage Calculator</h1>
+
+      <p class="head-input"><b>Cost of House</b><br>
+          <input type="text" id="inCost" class="form-group"></p>
+      <p class="head-input"><b>Down Payment</b> <br>
+          <input type="text" id="inDown" class="form-group"</p>
+      <!--Anual Persenance race-->
+      <p class="head-input"><b>APR (Interest)</b><br>
+          <input type="text" id="inAPR" class="form-group"></p>
+      <p class="head-input"><b>Period (How Long)</b> <br>
+          <input type="text" id="inPeriod" class="form-group"></p>
+      <p><button id="btnCalculate">Clculate</button></p>
+
+      <hr>
+
+      <p class="head-result"><b>Total Montly Payment: <span id="outMontly"></span></b></p>
+      </div>
+  </div>
+
+
+
+
+
+    <script type="text/javascript" src="js/mortgage-calc.js"></script>
   </body>
 </html>
